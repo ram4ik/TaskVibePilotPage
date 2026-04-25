@@ -13,9 +13,32 @@
                 <span class="logo-text">TaskVibePilot</span>
             </div>
             <nav>
-                <a href="#features">Features</a>
-                <a href="#screenshots">Screenshots</a>
-                <a href="https://apps.apple.com/us/app/taskvibepilot/id6756741336" class="btn-primary">Download</a>
+                <a href="#features" data-i18n="navFeatures">Features</a>
+                <a href="#screenshots" data-i18n="navScreenshots">Screenshots</a>
+                <a href="https://apps.apple.com/us/app/taskvibepilot/id6756741336" class="btn-primary" data-i18n="navDownload">Download</a>
+                <div class="language-control">
+                    <button type="button" class="btn-language" id="language-toggle" data-i18n="languageButton">Language (EN)</button>
+                    <div class="language-menu" id="language-menu" aria-hidden="true">
+                        <label for="language-select" class="visually-hidden" data-i18n="languageLabel">Select language</label>
+                        <select id="language-select" aria-label="Select language">
+                            <option value="en">🇺🇸 English</option>
+                            <option value="nl">🇳🇱 Nederlands</option>
+                            <option value="da">🇩🇰 Dansk</option>
+                            <option value="fr">🇫🇷 Français</option>
+                            <option value="de">🇩🇪 Deutsch</option>
+                            <option value="es">🇪🇸 Español</option>
+                            <option value="pt">🇵🇹 Português</option>
+                            <option value="pt-BR">🇧🇷 Português (Brasil)</option>
+                            <option value="pl">🇵🇱 Polski</option>
+                            <option value="ru">🇷🇺 Русский</option>
+                            <option value="ja">🇯🇵 日本語</option>
+                            <option value="zh">🇨🇳 中文</option>
+                            <option value="tr">🇹🇷 Türkçe</option>
+                            <option value="it">🇮🇹 Italiano</option>
+                            <option value="cs">🇨🇿 Čeština</option>
+                        </select>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -23,8 +46,8 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Master Your Time with Precision</h1>
-                <p class="subtitle">Track client work, analyze productivity with beautiful charts, and plan your tasks in one elegant, private interface.</p>
+                <h1 data-i18n="heroTitle">Master Your Time with Precision</h1>
+                <p class="subtitle" data-i18n="heroSubtitle">Track client work, analyze productivity with beautiful charts, and plan your tasks in one elegant, private interface.</p>
                 <div class="cta-buttons">
                     <a href="https://apps.apple.com/us/app/taskvibepilot/id6756741336" class="btn-appstore">
                         <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download on the App Store">
@@ -40,39 +63,39 @@
     <section id="features" class="features">
         <div class="container">
             <div class="section-title">
-                <h2>Why TaskVibePilot?</h2>
-                <p>Take control of your workday with the most intuitive path to managing your time, projects, and productivity.</p>
+                <h2 data-i18n="featuresTitle">Why TaskVibePilot?</h2>
+                <p data-i18n="featuresSubtitle">Take control of your workday with the most intuitive path to managing your time, projects, and productivity.</p>
             </div>
             <div class="feature-grid">
                 <div class="feature-card">
                     <div class="icon">⏱️</div>
-                    <h3>One-Tap Tracking</h3>
-                    <p>Start, pause, and stop timers instantly. Never lose a billable minute again.</p>
+                    <h3 data-i18n="featureOneTitle">One-Tap Tracking</h3>
+                    <p data-i18n="featureOneText">Start, pause, and stop timers instantly. Never lose a billable minute again.</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">📁</div>
-                    <h3>Project Categories</h3>
-                    <p>Organize your entries with professional categories like Client Work, Research & Development, Meetings, and Design.</p>
+                    <h3 data-i18n="featureTwoTitle">Project Categories</h3>
+                    <p data-i18n="featureTwoText">Organize your entries with professional categories like Client Work, Research & Development, Meetings, and Design.</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">📊</div>
-                    <h3>Visual Analytics</h3>
-                    <p>Understand where your time goes with dynamic weekly and monthly activity charts.</p>
+                    <h3 data-i18n="featureThreeTitle">Visual Analytics</h3>
+                    <p data-i18n="featureThreeText">Understand where your time goes with dynamic weekly and monthly activity charts.</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">📅</div>
-                    <h3>Future Task Planning</h3>
-                    <p>Plan your upcoming week by adding tasks with due dates and completion tracking.</p>
+                    <h3 data-i18n="featureFourTitle">Future Task Planning</h3>
+                    <p data-i18n="featureFourText">Plan your upcoming week by adding tasks with due dates and completion tracking.</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">🔒</div>
-                    <h3>Privacy First</h3>
-                    <p>Your data is yours. All logs are stored locally on your device using industry-standard persistence.</p>
+                    <h3 data-i18n="featureFiveTitle">Privacy First</h3>
+                    <p data-i18n="featureFiveText">Your data is yours. All logs are stored locally on your device using industry-standard persistence.</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">✨</div>
-                    <h3>Clean & Modern UI</h3>
-                    <p>A premium, "glassmorphism" design that feels right at home on your iPhone.</p>
+                    <h3 data-i18n="featureSixTitle">Clean & Modern UI</h3>
+                    <p data-i18n="featureSixText">A premium, "glassmorphism" design that feels right at home on your iPhone.</p>
                 </div>
             </div>
         </div>
@@ -81,7 +104,7 @@
     <section id="screenshots" class="screenshots">
         <div class="container">
             <div class="section-title">
-                <h2>App Gallery</h2>
+                <h2 data-i18n="galleryTitle">App Gallery</h2>
             </div>
             <div class="screenshot-container">
                 <img src="460x996bb.webp" alt="Screenshot 1">
@@ -97,24 +120,413 @@
     <section class="premium">
         <div class="container">
             <div class="premium-content">
-                <h2>Go Premium for Unlimited Power</h2>
+                <h2 data-i18n="premiumTitle">Go Premium for Unlimited Power</h2>
                 <ul>
-                    <li><strong>Unlimited History:</strong> Access your entire work archive, not just the last few days.</li>
-                    <li><strong>Full Calendar Access:</strong> Navigate through years of data with our unrestricted calendar.</li>
-                    <li><strong>Advanced Insights:</strong> Deep dive into your habits with monthly data visualization.</li>
-                    <li><strong>Infinite Tasks:</strong> Plan your entire career with no limits on task creation.</li>
+                    <li data-i18n-html="premiumOne"><strong>Unlimited History:</strong> Access your entire work archive, not just the last few days.</li>
+                    <li data-i18n-html="premiumTwo"><strong>Full Calendar Access:</strong> Navigate through years of data with our unrestricted calendar.</li>
+                    <li data-i18n-html="premiumThree"><strong>Advanced Insights:</strong> Deep dive into your habits with monthly data visualization.</li>
+                    <li data-i18n-html="premiumFour"><strong>Infinite Tasks:</strong> Plan your entire career with no limits on task creation.</li>
                 </ul>
-                <a href="https://apps.apple.com/us/app/taskvibepilot/id6756741336" class="btn-secondary">Upgrade Today</a>
+                <a href="https://apps.apple.com/us/app/taskvibepilot/id6756741336" class="btn-secondary" data-i18n="premiumButton">Upgrade Today</a>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 TaskVibePilot. All rights reserved.</p>
-            <p>Download TaskVibePilot on the <a href="https://apps.apple.com/us/app/taskvibepilot/id6756741336">App Store</a>.</p>
-            <p><a href="https://github.com/ram4ik/TaskVibePilotPage.git">GitHub Repository</a></p>
+            <p data-i18n="footerRights">&copy; 2026 TaskVibePilot. All rights reserved.</p>
+            <p data-i18n-html="footerDownload">Download TaskVibePilot on the <a href="https://apps.apple.com/us/app/taskvibepilot/id6756741336">App Store</a>.</p>
+            <p data-i18n-html="footerGithub"><a href="https://github.com/ram4ik/TaskVibePilotPage.git">GitHub Repository</a></p>
         </div>
     </footer>
+    <script>
+        (function () {
+            const translations = {
+                en: {
+                    navFeatures: "Features",
+                    navScreenshots: "Screenshots",
+                    navDownload: "Download",
+                    languageButton: "Language",
+                    languageLabel: "Select language",
+                    heroTitle: "Master Your Time with Precision",
+                    heroSubtitle: "Track client work, analyze productivity with beautiful charts, and plan your tasks in one elegant, private interface.",
+                    featuresTitle: "Why TaskVibePilot?",
+                    featuresSubtitle: "Take control of your workday with the most intuitive path to managing your time, projects, and productivity.",
+                    featureOneTitle: "One-Tap Tracking",
+                    featureOneText: "Start, pause, and stop timers instantly. Never lose a billable minute again.",
+                    featureTwoTitle: "Project Categories",
+                    featureTwoText: "Organize your entries with professional categories like Client Work, Research & Development, Meetings, and Design.",
+                    featureThreeTitle: "Visual Analytics",
+                    featureThreeText: "Understand where your time goes with dynamic weekly and monthly activity charts.",
+                    featureFourTitle: "Future Task Planning",
+                    featureFourText: "Plan your upcoming week by adding tasks with due dates and completion tracking.",
+                    featureFiveTitle: "Privacy First",
+                    featureFiveText: "Your data is yours. All logs are stored locally on your device using industry-standard persistence.",
+                    featureSixTitle: "Clean & Modern UI",
+                    featureSixText: "A premium, \"glassmorphism\" design that feels right at home on your iPhone.",
+                    galleryTitle: "App Gallery",
+                    premiumTitle: "Go Premium for Unlimited Power",
+                    premiumOne: "<strong>Unlimited History:</strong> Access your entire work archive, not just the last few days.",
+                    premiumTwo: "<strong>Full Calendar Access:</strong> Navigate through years of data with our unrestricted calendar.",
+                    premiumThree: "<strong>Advanced Insights:</strong> Deep dive into your habits with monthly data visualization.",
+                    premiumFour: "<strong>Infinite Tasks:</strong> Plan your entire career with no limits on task creation.",
+                    premiumButton: "Upgrade Today",
+                    footerRights: "&copy; 2026 TaskVibePilot. All rights reserved.",
+                    footerDownload: "Download TaskVibePilot on the <a href=\"https://apps.apple.com/us/app/taskvibepilot/id6756741336\">App Store</a>.",
+                    footerGithub: "<a href=\"https://github.com/ram4ik/TaskVibePilotPage.git\">GitHub Repository</a>"
+                },
+                nl: {
+                    navFeatures: "Functies", navScreenshots: "Screenshots", navDownload: "Downloaden", languageButton: "Taal", languageLabel: "Selecteer taal",
+                    heroTitle: "Beheer je tijd met precisie", heroSubtitle: "Houd klantwerk bij, analyseer productiviteit met mooie grafieken en plan je taken in een elegante, privé-interface.",
+                    featuresTitle: "Waarom TaskVibePilot?", featuresSubtitle: "Krijg controle over je werkdag met de meest intuïtieve manier om tijd, projecten en productiviteit te beheren.",
+                    featureOneTitle: "Tracking met één tik", featureOneText: "Start, pauzeer en stop timers direct. Mis nooit meer een factureerbare minuut.",
+                    featureTwoTitle: "Projectcategorieën", featureTwoText: "Organiseer je registraties met professionele categorieën zoals klantwerk, R&D, vergaderingen en design.",
+                    featureThreeTitle: "Visuele analyses", featureThreeText: "Zie waar je tijd naartoe gaat met dynamische wekelijkse en maandelijkse grafieken.",
+                    featureFourTitle: "Toekomstige taakplanning", featureFourText: "Plan je komende week door taken met deadlines en voortgang toe te voegen.",
+                    featureFiveTitle: "Privacy eerst", featureFiveText: "Jouw data is van jou. Alle logs blijven lokaal op je apparaat met betrouwbare opslag.",
+                    featureSixTitle: "Strakke en moderne UI", featureSixText: "Een premium 'glassmorphism'-ontwerp dat perfect past bij je iPhone.",
+                    galleryTitle: "App-galerij", premiumTitle: "Ga Premium voor onbeperkte kracht",
+                    premiumOne: "<strong>Onbeperkte geschiedenis:</strong> Krijg toegang tot je volledige werkarchief, niet alleen de laatste dagen.",
+                    premiumTwo: "<strong>Volledige kalendertoegang:</strong> Navigeer door jaren aan gegevens met onze onbeperkte kalender.",
+                    premiumThree: "<strong>Geavanceerde inzichten:</strong> Duik dieper in je gewoonten met maandelijkse datavisualisatie.",
+                    premiumFour: "<strong>Oneindige taken:</strong> Plan je volledige carrière zonder limiet op taken.",
+                    premiumButton: "Vandaag upgraden",
+                    footerRights: "&copy; 2026 TaskVibePilot. Alle rechten voorbehouden.",
+                    footerDownload: "Download TaskVibePilot in de <a href=\"https://apps.apple.com/us/app/taskvibepilot/id6756741336\">App Store</a>.",
+                    footerGithub: "<a href=\"https://github.com/ram4ik/TaskVibePilotPage.git\">GitHub-repository</a>"
+                },
+                da: {
+                    navFeatures: "Funktioner", navScreenshots: "Skærmbilleder", navDownload: "Download", languageButton: "Sprog", languageLabel: "Vælg sprog",
+                    heroTitle: "Få styr på din tid med præcision", heroSubtitle: "Registrer kundearbejde, analyser produktivitet med flotte grafer, og planlæg dine opgaver i én elegant, privat grænseflade.",
+                    featuresTitle: "Hvorfor TaskVibePilot?", featuresSubtitle: "Tag kontrol over din arbejdsdag med den mest intuitive måde at styre tid, projekter og produktivitet.",
+                    featureOneTitle: "Sporing med ét tryk", featureOneText: "Start, pause og stop timere med det samme. Mist aldrig et fakturerbart minut igen.",
+                    featureTwoTitle: "Projektkategorier", featureTwoText: "Organiser dine registreringer med professionelle kategorier som kundearbejde, forskning og udvikling, møder og design.",
+                    featureThreeTitle: "Visuel analyse", featureThreeText: "Se hvor din tid bliver af med dynamiske ugentlige og månedlige aktivitetsgrafer.",
+                    featureFourTitle: "Planlægning af kommende opgaver", featureFourText: "Planlæg din kommende uge ved at tilføje opgaver med deadlines og status.",
+                    featureFiveTitle: "Privatliv først", featureFiveText: "Dine data er dine. Alle logfiler gemmes lokalt på din enhed med pålidelig lagring.",
+                    featureSixTitle: "Rent og moderne UI", featureSixText: "Et premium 'glassmorphism'-design, der føles naturligt på din iPhone.",
+                    galleryTitle: "App-galleri", premiumTitle: "Bliv Premium for ubegrænset styrke",
+                    premiumOne: "<strong>Ubegrænset historik:</strong> Få adgang til hele dit arbejdsarkiv, ikke kun de sidste dage.",
+                    premiumTwo: "<strong>Fuld kalenderadgang:</strong> Naviger gennem års data med vores ubegrænsede kalender.",
+                    premiumThree: "<strong>Avanceret indsigt:</strong> Dyk ned i dine vaner med månedlig datavisualisering.",
+                    premiumFour: "<strong>Uendelige opgaver:</strong> Planlæg hele din karriere uden begrænsninger i opgaveoprettelse.",
+                    premiumButton: "Opgrader i dag",
+                    footerRights: "&copy; 2026 TaskVibePilot. Alle rettigheder forbeholdes.",
+                    footerDownload: "Download TaskVibePilot i <a href=\"https://apps.apple.com/us/app/taskvibepilot/id6756741336\">App Store</a>.",
+                    footerGithub: "<a href=\"https://github.com/ram4ik/TaskVibePilotPage.git\">GitHub-repository</a>"
+                },
+                fr: {
+                    navFeatures: "Fonctionnalités", navScreenshots: "Captures", navDownload: "Télécharger", languageButton: "Langue", languageLabel: "Choisir la langue",
+                    heroTitle: "Maîtrisez votre temps avec précision", heroSubtitle: "Suivez le travail client, analysez votre productivité avec de beaux graphiques et planifiez vos tâches dans une interface élégante et privée.",
+                    featuresTitle: "Pourquoi TaskVibePilot ?", featuresSubtitle: "Prenez le contrôle de votre journée avec la manière la plus intuitive de gérer votre temps, vos projets et votre productivité.",
+                    featureOneTitle: "Suivi en un toucher", featureOneText: "Démarrez, mettez en pause et arrêtez les minuteurs instantanément. Ne perdez plus jamais une minute facturable.",
+                    featureTwoTitle: "Catégories de projets", featureTwoText: "Organisez vos entrées avec des catégories professionnelles comme travail client, recherche et développement, réunions et design.",
+                    featureThreeTitle: "Analyses visuelles", featureThreeText: "Comprenez où va votre temps grâce à des graphiques dynamiques hebdomadaires et mensuels.",
+                    featureFourTitle: "Planification des tâches futures", featureFourText: "Planifiez votre semaine à venir en ajoutant des tâches avec échéances et suivi d'avancement.",
+                    featureFiveTitle: "Priorité à la confidentialité", featureFiveText: "Vos données vous appartiennent. Tous les journaux sont stockés localement sur votre appareil.",
+                    featureSixTitle: "UI propre et moderne", featureSixText: "Un design premium de type 'glassmorphism' parfaitement adapté à votre iPhone.",
+                    galleryTitle: "Galerie de l'app", premiumTitle: "Passez Premium pour une puissance illimitée",
+                    premiumOne: "<strong>Historique illimité :</strong> Accédez à l'ensemble de votre archive de travail, pas seulement aux derniers jours.",
+                    premiumTwo: "<strong>Accès complet au calendrier :</strong> Naviguez dans des années de données grâce à notre calendrier sans restriction.",
+                    premiumThree: "<strong>Insights avancés :</strong> Analysez vos habitudes en profondeur avec des visualisations mensuelles.",
+                    premiumFour: "<strong>Tâches infinies :</strong> Planifiez toute votre carrière sans limite de création de tâches.",
+                    premiumButton: "Passer à Premium",
+                    footerRights: "&copy; 2026 TaskVibePilot. Tous droits réservés.",
+                    footerDownload: "Téléchargez TaskVibePilot sur l'<a href=\"https://apps.apple.com/us/app/taskvibepilot/id6756741336\">App Store</a>.",
+                    footerGithub: "<a href=\"https://github.com/ram4ik/TaskVibePilotPage.git\">Dépôt GitHub</a>"
+                },
+                de: {
+                    navFeatures: "Funktionen", navScreenshots: "Screenshots", navDownload: "Download", languageButton: "Sprache", languageLabel: "Sprache auswählen",
+                    heroTitle: "Meistern Sie Ihre Zeit mit Präzision", heroSubtitle: "Erfassen Sie Kundenarbeit, analysieren Sie Produktivität mit schönen Diagrammen und planen Sie Aufgaben in einer eleganten, privaten Oberfläche.",
+                    featuresTitle: "Warum TaskVibePilot?", featuresSubtitle: "Übernehmen Sie die Kontrolle über Ihren Arbeitstag mit dem intuitivsten Weg, Zeit, Projekte und Produktivität zu verwalten.",
+                    featureOneTitle: "Tracking mit einem Tippen", featureOneText: "Starten, pausieren und stoppen Sie Timer sofort. Verpassen Sie nie wieder eine abrechenbare Minute.",
+                    featureTwoTitle: "Projektkategorien", featureTwoText: "Organisieren Sie Einträge mit professionellen Kategorien wie Kundenarbeit, Forschung & Entwicklung, Meetings und Design.",
+                    featureThreeTitle: "Visuelle Analysen", featureThreeText: "Verstehen Sie mit dynamischen Wochen- und Monatsdiagrammen, wohin Ihre Zeit fließt.",
+                    featureFourTitle: "Zukünftige Aufgabenplanung", featureFourText: "Planen Sie Ihre kommende Woche mit Aufgaben, Fälligkeitsdaten und Fortschrittsverfolgung.",
+                    featureFiveTitle: "Datenschutz zuerst", featureFiveText: "Ihre Daten gehören Ihnen. Alle Protokolle werden lokal auf Ihrem Gerät gespeichert.",
+                    featureSixTitle: "Saubere und moderne UI", featureSixText: "Ein hochwertiges 'Glassmorphism'-Design, das sich auf dem iPhone zuhause anfühlt.",
+                    galleryTitle: "App-Galerie", premiumTitle: "Premium für unbegrenzte Power",
+                    premiumOne: "<strong>Unbegrenzter Verlauf:</strong> Zugriff auf Ihr gesamtes Arbeitsarchiv, nicht nur die letzten Tage.",
+                    premiumTwo: "<strong>Voller Kalenderzugriff:</strong> Navigieren Sie durch Jahre von Daten mit unserem uneingeschränkten Kalender.",
+                    premiumThree: "<strong>Erweiterte Einblicke:</strong> Analysieren Sie Gewohnheiten mit monatlicher Datenvisualisierung.",
+                    premiumFour: "<strong>Unendliche Aufgaben:</strong> Planen Sie Ihre gesamte Karriere ohne Begrenzung bei Aufgaben.",
+                    premiumButton: "Heute upgraden",
+                    footerRights: "&copy; 2026 TaskVibePilot. Alle Rechte vorbehalten.",
+                    footerDownload: "Laden Sie TaskVibePilot im <a href=\"https://apps.apple.com/us/app/taskvibepilot/id6756741336\">App Store</a> herunter.",
+                    footerGithub: "<a href=\"https://github.com/ram4ik/TaskVibePilotPage.git\">GitHub-Repository</a>"
+                },
+                es: {
+                    navFeatures: "Funciones", navScreenshots: "Capturas", navDownload: "Descargar", languageButton: "Idioma", languageLabel: "Seleccionar idioma",
+                    heroTitle: "Domina tu tiempo con precisión", heroSubtitle: "Registra trabajo de clientes, analiza tu productividad con gráficos elegantes y planifica tareas en una interfaz privada y moderna.",
+                    featuresTitle: "¿Por qué TaskVibePilot?", featuresSubtitle: "Controla tu jornada con la forma más intuitiva de gestionar tiempo, proyectos y productividad.",
+                    featureOneTitle: "Seguimiento con un toque", featureOneText: "Inicia, pausa y detén temporizadores al instante. No vuelvas a perder un minuto facturable.",
+                    featureTwoTitle: "Categorías de proyecto", featureTwoText: "Organiza tus registros con categorías profesionales como trabajo de cliente, I+D, reuniones y diseño.",
+                    featureThreeTitle: "Analítica visual", featureThreeText: "Comprende dónde se va tu tiempo con gráficos dinámicos semanales y mensuales.",
+                    featureFourTitle: "Planificación de tareas futuras", featureFourText: "Planifica la próxima semana añadiendo tareas con fechas límite y seguimiento de progreso.",
+                    featureFiveTitle: "Privacidad primero", featureFiveText: "Tus datos son tuyos. Todos los registros se guardan localmente en tu dispositivo.",
+                    featureSixTitle: "UI limpia y moderna", featureSixText: "Un diseño premium de 'glassmorphism' que se siente perfecto en tu iPhone.",
+                    galleryTitle: "Galería de la app", premiumTitle: "Hazte Premium para poder ilimitado",
+                    premiumOne: "<strong>Historial ilimitado:</strong> Accede a todo tu archivo de trabajo, no solo a los últimos días.",
+                    premiumTwo: "<strong>Acceso completo al calendario:</strong> Navega por años de datos con nuestro calendario sin restricciones.",
+                    premiumThree: "<strong>Información avanzada:</strong> Profundiza en tus hábitos con visualización mensual.",
+                    premiumFour: "<strong>Tareas infinitas:</strong> Planifica toda tu carrera sin límites de creación.",
+                    premiumButton: "Mejorar hoy",
+                    footerRights: "&copy; 2026 TaskVibePilot. Todos los derechos reservados.",
+                    footerDownload: "Descarga TaskVibePilot en la <a href=\"https://apps.apple.com/us/app/taskvibepilot/id6756741336\">App Store</a>.",
+                    footerGithub: "<a href=\"https://github.com/ram4ik/TaskVibePilotPage.git\">Repositorio de GitHub</a>"
+                },
+                pt: {
+                    navFeatures: "Recursos", navScreenshots: "Capturas", navDownload: "Descarregar", languageButton: "Idioma", languageLabel: "Selecionar idioma",
+                    heroTitle: "Domine o seu tempo com precisão", heroSubtitle: "Registe trabalho de clientes, analise produtividade com gráficos elegantes e planeie tarefas numa interface privada.",
+                    featuresTitle: "Porque escolher o TaskVibePilot?", featuresSubtitle: "Assuma o controlo do seu dia com a forma mais intuitiva de gerir tempo, projetos e produtividade.",
+                    featureOneTitle: "Registo com um toque", featureOneText: "Inicie, pause e pare cronómetros instantaneamente. Nunca mais perca um minuto faturável.",
+                    featureTwoTitle: "Categorias de projeto", featureTwoText: "Organize os registos com categorias profissionais como trabalho de cliente, I&D, reuniões e design.",
+                    featureThreeTitle: "Análise visual", featureThreeText: "Perceba para onde vai o seu tempo com gráficos dinâmicos semanais e mensais.",
+                    featureFourTitle: "Planeamento de tarefas futuras", featureFourText: "Planeie a próxima semana adicionando tarefas com prazos e acompanhamento.",
+                    featureFiveTitle: "Privacidade em primeiro lugar", featureFiveText: "Os seus dados são seus. Todos os registos ficam guardados localmente no seu dispositivo.",
+                    featureSixTitle: "UI limpa e moderna", featureSixText: "Um design premium em 'glassmorphism' que combina perfeitamente com o seu iPhone.",
+                    galleryTitle: "Galeria da app", premiumTitle: "Torne-se Premium com poder ilimitado",
+                    premiumOne: "<strong>Histórico ilimitado:</strong> Aceda a todo o arquivo de trabalho, não apenas aos últimos dias.",
+                    premiumTwo: "<strong>Acesso total ao calendário:</strong> Navegue por anos de dados com calendário sem restrições.",
+                    premiumThree: "<strong>Insights avançados:</strong> Analise hábitos em profundidade com visualização mensal.",
+                    premiumFour: "<strong>Tarefas infinitas:</strong> Planeie toda a sua carreira sem limites de criação.",
+                    premiumButton: "Atualize hoje",
+                    footerRights: "&copy; 2026 TaskVibePilot. Todos os direitos reservados.",
+                    footerDownload: "Descarregue o TaskVibePilot na <a href=\"https://apps.apple.com/us/app/taskvibepilot/id6756741336\">App Store</a>.",
+                    footerGithub: "<a href=\"https://github.com/ram4ik/TaskVibePilotPage.git\">Repositório GitHub</a>"
+                },
+                "pt-BR": {
+                    navFeatures: "Recursos", navScreenshots: "Capturas", navDownload: "Baixar", languageButton: "Idioma", languageLabel: "Selecionar idioma",
+                    heroTitle: "Domine seu tempo com precisão", heroSubtitle: "Acompanhe trabalhos de clientes, analise produtividade com gráficos bonitos e planeje tarefas em uma interface elegante e privada.",
+                    featuresTitle: "Por que TaskVibePilot?", featuresSubtitle: "Controle seu dia de trabalho com a forma mais intuitiva de gerenciar tempo, projetos e produtividade.",
+                    featureOneTitle: "Rastreamento com um toque", featureOneText: "Inicie, pause e pare cronômetros instantaneamente. Nunca mais perca um minuto faturável.",
+                    featureTwoTitle: "Categorias de projeto", featureTwoText: "Organize seus registros com categorias profissionais como trabalho de cliente, P&D, reuniões e design.",
+                    featureThreeTitle: "Análises visuais", featureThreeText: "Entenda para onde vai seu tempo com gráficos dinâmicos semanais e mensais.",
+                    featureFourTitle: "Planejamento de tarefas futuras", featureFourText: "Planeje a próxima semana adicionando tarefas com prazos e acompanhamento de conclusão.",
+                    featureFiveTitle: "Privacidade em primeiro lugar", featureFiveText: "Seus dados são seus. Todos os registros ficam armazenados localmente no seu dispositivo.",
+                    featureSixTitle: "UI limpa e moderna", featureSixText: "Um design premium de 'glassmorphism' que combina perfeitamente com seu iPhone.",
+                    galleryTitle: "Galeria do app", premiumTitle: "Vire Premium para poder ilimitado",
+                    premiumOne: "<strong>Histórico ilimitado:</strong> Acesse todo o seu arquivo de trabalho, não apenas os últimos dias.",
+                    premiumTwo: "<strong>Acesso total ao calendário:</strong> Navegue por anos de dados com nosso calendário sem restrições.",
+                    premiumThree: "<strong>Insights avançados:</strong> Mergulhe nos seus hábitos com visualização mensal.",
+                    premiumFour: "<strong>Tarefas infinitas:</strong> Planeje toda a sua carreira sem limites de criação de tarefas.",
+                    premiumButton: "Faça upgrade hoje",
+                    footerRights: "&copy; 2026 TaskVibePilot. Todos os direitos reservados.",
+                    footerDownload: "Baixe o TaskVibePilot na <a href=\"https://apps.apple.com/us/app/taskvibepilot/id6756741336\">App Store</a>.",
+                    footerGithub: "<a href=\"https://github.com/ram4ik/TaskVibePilotPage.git\">Repositório no GitHub</a>"
+                },
+                pl: {
+                    navFeatures: "Funkcje", navScreenshots: "Zrzuty ekranu", navDownload: "Pobierz", languageButton: "Język", languageLabel: "Wybierz język",
+                    heroTitle: "Opanuj swój czas z precyzją", heroSubtitle: "Śledź pracę dla klientów, analizuj produktywność na czytelnych wykresach i planuj zadania w eleganckim, prywatnym interfejsie.",
+                    featuresTitle: "Dlaczego TaskVibePilot?", featuresSubtitle: "Przejmij kontrolę nad dniem pracy dzięki intuicyjnemu zarządzaniu czasem, projektami i produktywnością.",
+                    featureOneTitle: "Śledzenie jednym dotknięciem", featureOneText: "Uruchamiaj, pauzuj i zatrzymuj timery natychmiast. Nie trać już ani minuty rozliczalnej.",
+                    featureTwoTitle: "Kategorie projektów", featureTwoText: "Porządkuj wpisy dzięki kategoriom takim jak praca dla klienta, badania i rozwój, spotkania i design.",
+                    featureThreeTitle: "Analityka wizualna", featureThreeText: "Sprawdź, na co poświęcasz czas dzięki dynamicznym wykresom tygodniowym i miesięcznym.",
+                    featureFourTitle: "Planowanie przyszłych zadań", featureFourText: "Zaplanuj nadchodzący tydzień, dodając zadania z terminami i śledzeniem postępów.",
+                    featureFiveTitle: "Prywatność przede wszystkim", featureFiveText: "Twoje dane należą do Ciebie. Wszystkie logi są przechowywane lokalnie na urządzeniu.",
+                    featureSixTitle: "Czysty i nowoczesny interfejs", featureSixText: "Premium design w stylu 'glassmorphism', który świetnie wygląda na iPhonie.",
+                    galleryTitle: "Galeria aplikacji", premiumTitle: "Przejdź na Premium i zyskaj pełną moc",
+                    premiumOne: "<strong>Nielimitowana historia:</strong> Uzyskaj dostęp do całego archiwum pracy, nie tylko ostatnich dni.",
+                    premiumTwo: "<strong>Pełny dostęp do kalendarza:</strong> Przeglądaj lata danych bez ograniczeń.",
+                    premiumThree: "<strong>Zaawansowane wnioski:</strong> Analizuj nawyki dzięki miesięcznej wizualizacji danych.",
+                    premiumFour: "<strong>Nieskończone zadania:</strong> Planuj całą karierę bez limitów tworzenia zadań.",
+                    premiumButton: "Ulepsz już dziś",
+                    footerRights: "&copy; 2026 TaskVibePilot. Wszelkie prawa zastrzeżone.",
+                    footerDownload: "Pobierz TaskVibePilot z <a href=\"https://apps.apple.com/us/app/taskvibepilot/id6756741336\">App Store</a>.",
+                    footerGithub: "<a href=\"https://github.com/ram4ik/TaskVibePilotPage.git\">Repozytorium GitHub</a>"
+                },
+                ru: {
+                    navFeatures: "Возможности", navScreenshots: "Скриншоты", navDownload: "Скачать", languageButton: "Язык", languageLabel: "Выберите язык",
+                    heroTitle: "Управляйте временем точно", heroSubtitle: "Отслеживайте работу с клиентами, анализируйте продуктивность с красивыми графиками и планируйте задачи в удобном приватном интерфейсе.",
+                    featuresTitle: "Почему TaskVibePilot?", featuresSubtitle: "Возьмите под контроль рабочий день с самым интуитивным способом управления временем, проектами и продуктивностью.",
+                    featureOneTitle: "Трекинг в одно нажатие", featureOneText: "Запускайте, ставьте на паузу и останавливайте таймеры мгновенно. Больше не теряйте оплачиваемые минуты.",
+                    featureTwoTitle: "Категории проектов", featureTwoText: "Организуйте записи по категориям: работа с клиентами, исследования и разработка, встречи и дизайн.",
+                    featureThreeTitle: "Визуальная аналитика", featureThreeText: "Понимайте, куда уходит время, с динамическими недельными и месячными графиками.",
+                    featureFourTitle: "Планирование будущих задач", featureFourText: "Планируйте следующую неделю, добавляя задачи с дедлайнами и отслеживанием выполнения.",
+                    featureFiveTitle: "Конфиденциальность прежде всего", featureFiveText: "Ваши данные принадлежат только вам. Все записи хранятся локально на устройстве.",
+                    featureSixTitle: "Чистый и современный UI", featureSixText: "Премиальный дизайн в стиле glassmorphism, идеально подходящий для iPhone.",
+                    galleryTitle: "Галерея приложения", premiumTitle: "Перейдите на Premium для безграничных возможностей",
+                    premiumOne: "<strong>Безлимитная история:</strong> Доступ ко всему архиву работы, а не только к последним дням.",
+                    premiumTwo: "<strong>Полный доступ к календарю:</strong> Просматривайте годы данных без ограничений.",
+                    premiumThree: "<strong>Продвинутые инсайты:</strong> Глубоко анализируйте привычки с помесячной визуализацией.",
+                    premiumFour: "<strong>Бесконечные задачи:</strong> Планируйте всю карьеру без ограничений на создание задач.",
+                    premiumButton: "Обновиться сегодня",
+                    footerRights: "&copy; 2026 TaskVibePilot. Все права защищены.",
+                    footerDownload: "Скачайте TaskVibePilot в <a href=\"https://apps.apple.com/us/app/taskvibepilot/id6756741336\">App Store</a>.",
+                    footerGithub: "<a href=\"https://github.com/ram4ik/TaskVibePilotPage.git\">Репозиторий GitHub</a>"
+                },
+                ja: {
+                    navFeatures: "機能", navScreenshots: "スクリーンショット", navDownload: "ダウンロード", languageButton: "言語", languageLabel: "言語を選択",
+                    heroTitle: "時間を正確に管理", heroSubtitle: "クライアント作業を追跡し、美しいチャートで生産性を分析。洗練されたプライベートな画面でタスクを計画できます。",
+                    featuresTitle: "なぜ TaskVibePilot？", featuresSubtitle: "時間、プロジェクト、生産性を直感的に管理して、仕事の1日をコントロールしましょう。",
+                    featureOneTitle: "ワンタップ記録", featureOneText: "タイマーをすぐに開始・一時停止・停止。請求可能な時間を逃しません。",
+                    featureTwoTitle: "プロジェクトカテゴリ", featureTwoText: "クライアント作業、研究開発、会議、デザインなどのカテゴリで記録を整理。",
+                    featureThreeTitle: "ビジュアル分析", featureThreeText: "週次・月次の動的チャートで時間の使い方を把握。",
+                    featureFourTitle: "将来タスクの計画", featureFourText: "期限付きタスクと進捗追跡で来週の予定を計画。",
+                    featureFiveTitle: "プライバシー第一", featureFiveText: "データはあなたのもの。すべてのログは端末内にローカル保存されます。",
+                    featureSixTitle: "クリーンでモダンなUI", featureSixText: "iPhone に自然に馴染むプレミアムな glassmorphism デザイン。",
+                    galleryTitle: "アプリギャラリー", premiumTitle: "Premiumで無制限のパワーを",
+                    premiumOne: "<strong>無制限の履歴:</strong> 数日分だけでなく、すべての作業履歴にアクセス。",
+                    premiumTwo: "<strong>カレンダー完全アクセス:</strong> 制限のないカレンダーで年単位のデータを閲覧。",
+                    premiumThree: "<strong>高度なインサイト:</strong> 月次可視化で習慣を深く分析。",
+                    premiumFour: "<strong>無限のタスク:</strong> タスク作成数に制限なく将来計画を立てられます。",
+                    premiumButton: "今すぐアップグレード",
+                    footerRights: "&copy; 2026 TaskVibePilot. All rights reserved.",
+                    footerDownload: "<a href=\"https://apps.apple.com/us/app/taskvibepilot/id6756741336\">App Store</a> で TaskVibePilot をダウンロード。",
+                    footerGithub: "<a href=\"https://github.com/ram4ik/TaskVibePilotPage.git\">GitHub リポジトリ</a>"
+                },
+                zh: {
+                    navFeatures: "功能", navScreenshots: "截图", navDownload: "下载", languageButton: "语言", languageLabel: "选择语言",
+                    heroTitle: "精准掌控你的时间", heroSubtitle: "记录客户工作，用精美图表分析生产力，并在优雅私密的界面中规划任务。",
+                    featuresTitle: "为什么选择 TaskVibePilot？", featuresSubtitle: "用最直观的方式管理时间、项目和效率，全面掌控你的工作日。",
+                    featureOneTitle: "一键计时", featureOneText: "立即开始、暂停和停止计时器，不再错过任何可计费分钟。",
+                    featureTwoTitle: "项目分类", featureTwoText: "使用客户工作、研发、会议和设计等专业分类整理记录。",
+                    featureThreeTitle: "可视化分析", featureThreeText: "通过动态周/月图表了解时间都花在了哪里。",
+                    featureFourTitle: "未来任务规划", featureFourText: "添加带截止日期和完成追踪的任务，规划接下来的一周。",
+                    featureFiveTitle: "隐私优先", featureFiveText: "你的数据只属于你。所有日志都保存在你的设备本地。",
+                    featureSixTitle: "简洁现代界面", featureSixText: "高级 glassmorphism 设计，在 iPhone 上体验自然流畅。",
+                    galleryTitle: "应用画廊", premiumTitle: "升级 Premium，解锁无限能力",
+                    premiumOne: "<strong>无限历史记录：</strong>访问完整工作档案，而不仅是最近几天。",
+                    premiumTwo: "<strong>完整日历访问：</strong>通过无限制日历浏览多年数据。",
+                    premiumThree: "<strong>高级洞察：</strong>借助月度可视化深入分析你的习惯。",
+                    premiumFour: "<strong>无限任务：</strong>创建任务无上限，规划整个职业生涯。",
+                    premiumButton: "立即升级",
+                    footerRights: "&copy; 2026 TaskVibePilot. 版权所有。",
+                    footerDownload: "在 <a href=\"https://apps.apple.com/us/app/taskvibepilot/id6756741336\">App Store</a> 下载 TaskVibePilot。",
+                    footerGithub: "<a href=\"https://github.com/ram4ik/TaskVibePilotPage.git\">GitHub 仓库</a>"
+                },
+                tr: {
+                    navFeatures: "Özellikler", navScreenshots: "Ekran görüntüleri", navDownload: "İndir", languageButton: "Dil", languageLabel: "Dil seçin",
+                    heroTitle: "Zamanını hassasiyetle yönet", heroSubtitle: "Müşteri işlerini takip et, üretkenliği şık grafiklerle analiz et ve görevlerini zarif, özel bir arayüzde planla.",
+                    featuresTitle: "Neden TaskVibePilot?", featuresSubtitle: "Zamanı, projeleri ve üretkenliği yönetmenin en sezgisel yolu ile iş gününü kontrol et.",
+                    featureOneTitle: "Tek dokunuşla takip", featureOneText: "Zamanlayıcıları anında başlat, duraklat ve durdur. Faturalandırılabilir dakikaları kaçırma.",
+                    featureTwoTitle: "Proje kategorileri", featureTwoText: "Kayıtlarını müşteri işleri, Ar-Ge, toplantılar ve tasarım gibi profesyonel kategorilerle düzenle.",
+                    featureThreeTitle: "Görsel analizler", featureThreeText: "Dinamik haftalık ve aylık grafiklerle zamanının nereye gittiğini gör.",
+                    featureFourTitle: "Gelecek görev planlama", featureFourText: "Son tarih ve tamamlanma takibi olan görevler ekleyerek önümüzdeki haftayı planla.",
+                    featureFiveTitle: "Önce gizlilik", featureFiveText: "Verilerin sana ait. Tüm kayıtlar cihazında yerel olarak saklanır.",
+                    featureSixTitle: "Temiz ve modern arayüz", featureSixText: "iPhone'da harika hissettiren premium bir 'glassmorphism' tasarımı.",
+                    galleryTitle: "Uygulama galerisi", premiumTitle: "Sınırsız güç için Premium'a geç",
+                    premiumOne: "<strong>Sınırsız geçmiş:</strong> Sadece son günler değil, tüm çalışma arşivine eriş.",
+                    premiumTwo: "<strong>Tam takvim erişimi:</strong> Sınırsız takvimle yılların verisini görüntüle.",
+                    premiumThree: "<strong>Gelişmiş içgörüler:</strong> Aylık görselleştirme ile alışkanlıklarını derinlemesine analiz et.",
+                    premiumFour: "<strong>Sonsuz görevler:</strong> Görev oluşturma sınırı olmadan tüm kariyerini planla.",
+                    premiumButton: "Hemen yükselt",
+                    footerRights: "&copy; 2026 TaskVibePilot. Tüm hakları saklıdır.",
+                    footerDownload: "TaskVibePilot'u <a href=\"https://apps.apple.com/us/app/taskvibepilot/id6756741336\">App Store</a> üzerinden indirin.",
+                    footerGithub: "<a href=\"https://github.com/ram4ik/TaskVibePilotPage.git\">GitHub deposu</a>"
+                },
+                it: {
+                    navFeatures: "Funzionalità", navScreenshots: "Screenshot", navDownload: "Scarica", languageButton: "Lingua", languageLabel: "Seleziona lingua",
+                    heroTitle: "Gestisci il tuo tempo con precisione", heroSubtitle: "Tieni traccia del lavoro cliente, analizza la produttività con grafici eleganti e pianifica attività in un'interfaccia privata e raffinata.",
+                    featuresTitle: "Perché TaskVibePilot?", featuresSubtitle: "Prendi il controllo della giornata lavorativa con il modo più intuitivo per gestire tempo, progetti e produttività.",
+                    featureOneTitle: "Tracciamento con un tocco", featureOneText: "Avvia, metti in pausa e ferma i timer all'istante. Non perdere più un minuto fatturabile.",
+                    featureTwoTitle: "Categorie progetto", featureTwoText: "Organizza le registrazioni con categorie professionali come lavoro cliente, ricerca e sviluppo, riunioni e design.",
+                    featureThreeTitle: "Analisi visive", featureThreeText: "Capisci dove va il tuo tempo con grafici dinamici settimanali e mensili.",
+                    featureFourTitle: "Pianificazione attività future", featureFourText: "Pianifica la prossima settimana aggiungendo attività con scadenze e monitoraggio completamento.",
+                    featureFiveTitle: "Privacy prima di tutto", featureFiveText: "I tuoi dati sono tuoi. Tutti i log vengono salvati localmente sul dispositivo.",
+                    featureSixTitle: "UI pulita e moderna", featureSixText: "Un design premium in stile 'glassmorphism' perfetto per il tuo iPhone.",
+                    galleryTitle: "Galleria app", premiumTitle: "Passa a Premium per potenza illimitata",
+                    premiumOne: "<strong>Cronologia illimitata:</strong> Accedi all'intero archivio di lavoro, non solo agli ultimi giorni.",
+                    premiumTwo: "<strong>Accesso completo al calendario:</strong> Naviga tra anni di dati con calendario senza limiti.",
+                    premiumThree: "<strong>Insight avanzati:</strong> Approfondisci le tue abitudini con visualizzazione mensile.",
+                    premiumFour: "<strong>Attività infinite:</strong> Pianifica tutta la tua carriera senza limiti di creazione attività.",
+                    premiumButton: "Aggiorna oggi",
+                    footerRights: "&copy; 2026 TaskVibePilot. Tutti i diritti riservati.",
+                    footerDownload: "Scarica TaskVibePilot su <a href=\"https://apps.apple.com/us/app/taskvibepilot/id6756741336\">App Store</a>.",
+                    footerGithub: "<a href=\"https://github.com/ram4ik/TaskVibePilotPage.git\">Repository GitHub</a>"
+                },
+                cs: {
+                    navFeatures: "Funkce", navScreenshots: "Snímky obrazovky", navDownload: "Stáhnout", languageButton: "Jazyk", languageLabel: "Vyberte jazyk",
+                    heroTitle: "Ovládněte svůj čas s přesností", heroSubtitle: "Sledujte práci pro klienty, analyzujte produktivitu pomocí krásných grafů a plánujte úkoly v elegantním soukromém rozhraní.",
+                    featuresTitle: "Proč TaskVibePilot?", featuresSubtitle: "Získejte kontrolu nad pracovním dnem díky nejintuitivnějšímu způsobu správy času, projektů a produktivity.",
+                    featureOneTitle: "Sledování jedním klepnutím", featureOneText: "Okamžitě spouštějte, pozastavujte a zastavujte časovače. Už nikdy neztraťte fakturovatelnou minutu.",
+                    featureTwoTitle: "Kategorie projektů", featureTwoText: "Organizujte záznamy pomocí profesionálních kategorií jako práce pro klienty, výzkum a vývoj, schůzky a design.",
+                    featureThreeTitle: "Vizuální analytika", featureThreeText: "Zjistěte, kam váš čas mizí, pomocí dynamických týdenních a měsíčních grafů.",
+                    featureFourTitle: "Plánování budoucích úkolů", featureFourText: "Naplánujte příští týden přidáním úkolů s termíny a sledováním dokončení.",
+                    featureFiveTitle: "Soukromí na prvním místě", featureFiveText: "Vaše data jsou vaše. Všechny záznamy se ukládají lokálně na vašem zařízení.",
+                    featureSixTitle: "Čisté a moderní UI", featureSixText: "Prémiový design ve stylu 'glassmorphism', který skvěle sedí na iPhonu.",
+                    galleryTitle: "Galerie aplikace", premiumTitle: "Přejděte na Premium pro neomezený výkon",
+                    premiumOne: "<strong>Neomezená historie:</strong> Přístup k celému pracovnímu archivu, nejen posledním dnům.",
+                    premiumTwo: "<strong>Plný přístup ke kalendáři:</strong> Procházejte roky dat bez omezení.",
+                    premiumThree: "<strong>Pokročilé přehledy:</strong> Analyzujte návyky do hloubky s měsíční vizualizací.",
+                    premiumFour: "<strong>Nekonečné úkoly:</strong> Plánujte celou kariéru bez limitů vytváření úkolů.",
+                    premiumButton: "Upgradovat dnes",
+                    footerRights: "&copy; 2026 TaskVibePilot. Všechna práva vyhrazena.",
+                    footerDownload: "Stáhněte si TaskVibePilot v <a href=\"https://apps.apple.com/us/app/taskvibepilot/id6756741336\">App Store</a>.",
+                    footerGithub: "<a href=\"https://github.com/ram4ik/TaskVibePilotPage.git\">GitHub repozitář</a>"
+                }
+            };
+
+            const select = document.getElementById("language-select");
+            const toggle = document.getElementById("language-toggle");
+            const menu = document.getElementById("language-menu");
+            const languageMeta = {
+                en: { short: "EN", icon: "🇺🇸" },
+                nl: { short: "NL", icon: "🇳🇱" },
+                da: { short: "DA", icon: "🇩🇰" },
+                fr: { short: "FR", icon: "🇫🇷" },
+                de: { short: "DE", icon: "🇩🇪" },
+                es: { short: "ES", icon: "🇪🇸" },
+                pt: { short: "PT", icon: "🇵🇹" },
+                "pt-BR": { short: "PT-BR", icon: "🇧🇷" },
+                pl: { short: "PL", icon: "🇵🇱" },
+                ru: { short: "RU", icon: "🇷🇺" },
+                ja: { short: "JA", icon: "🇯🇵" },
+                zh: { short: "ZH", icon: "🇨🇳" },
+                tr: { short: "TR", icon: "🇹🇷" },
+                it: { short: "IT", icon: "🇮🇹" },
+                cs: { short: "CS", icon: "🇨🇿" }
+            };
+            const defaultLanguage = "en";
+            const savedLanguage = localStorage.getItem("taskvibe-language");
+            const browserLanguage = navigator.language || defaultLanguage;
+            const initialLanguage = savedLanguage || (translations[browserLanguage] ? browserLanguage : browserLanguage.split("-")[0]);
+            const activeLanguage = translations[initialLanguage] ? initialLanguage : defaultLanguage;
+
+            function applyLanguage(languageCode) {
+                const dict = translations[languageCode] || translations[defaultLanguage];
+                document.documentElement.lang = languageCode;
+
+                document.querySelectorAll("[data-i18n]").forEach((node) => {
+                    const key = node.getAttribute("data-i18n");
+                    if (dict[key]) node.textContent = dict[key];
+                });
+
+                document.querySelectorAll("[data-i18n-html]").forEach((node) => {
+                    const key = node.getAttribute("data-i18n-html");
+                    if (dict[key]) node.innerHTML = dict[key];
+                });
+
+                const meta = languageMeta[languageCode] || languageMeta[defaultLanguage];
+                toggle.textContent = `${dict.languageButton} (${meta.short})`;
+                toggle.setAttribute("aria-label", `${dict.languageButton}: ${meta.short}`);
+                select.value = languageCode;
+                localStorage.setItem("taskvibe-language", languageCode);
+            }
+
+            function setMenuOpen(isOpen) {
+                menu.classList.toggle("open", isOpen);
+                menu.setAttribute("aria-hidden", String(!isOpen));
+            }
+
+            toggle.addEventListener("click", () => {
+                const willOpen = !menu.classList.contains("open");
+                setMenuOpen(willOpen);
+            });
+
+            document.addEventListener("click", (event) => {
+                if (!menu.contains(event.target) && !toggle.contains(event.target)) {
+                    setMenuOpen(false);
+                }
+            });
+
+            select.addEventListener("change", (event) => {
+                applyLanguage(event.target.value);
+                setMenuOpen(false);
+            });
+
+            applyLanguage(activeLanguage);
+        }());
+    </script>
 </body>
 </html>

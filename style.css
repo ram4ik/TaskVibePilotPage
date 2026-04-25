@@ -63,11 +63,69 @@ nav a:hover {
     color: var(--primary-color);
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .btn-primary {
     background: var(--primary-color);
     color: var(--white) !important;
     padding: 8px 20px;
     border-radius: 20px;
+}
+
+.language-control {
+    position: relative;
+    margin-left: 8px;
+}
+
+.btn-language {
+    background: transparent;
+    border: 1px solid rgba(28, 28, 30, 0.2);
+    color: var(--text-color);
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.language-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: var(--white);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+    z-index: 1001;
+}
+
+.language-menu.open {
+    display: block;
+}
+
+#language-select {
+    min-width: 180px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(28, 28, 30, 0.2);
+    background: var(--white);
+    color: var(--text-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 /* Hero Section */
@@ -244,6 +302,18 @@ footer a {
     }
     
     header nav {
+        gap: 6px;
+    }
+
+    header nav a:not(.btn-primary) {
         display: none;
+    }
+
+    .btn-primary {
+        padding: 7px 14px;
+    }
+
+    .btn-language {
+        padding: 7px 12px;
     }
 }
